@@ -169,15 +169,14 @@ sub slugify {
     # but the source documents are sometimes lacking forenames so
     # for the current names, this works enough to be unambiguous)
     for ($s) {
-        s/Independent Commission on Freedom of Information/icofoi/gi;
+        s/\s+/-/g;
         s/\s+/ /g;
         s/_/-/g;
         s/--+/-/g;
-        s/[^ A-Za-z-]//g; # letters spaces and hyphen only
+        s/independent-commission-on-freedom-of-information/icofoi/i;
+        s/[^ A-Z0-9a-z-]//g; # alphanums, spaces and hyphen only
         s/^rt hon (\w+)/$1/;
         s/^(prof\w*|dame|mr|miss|mrs|ms|prof) \w+( \w.*)/$1$2/;
-        s/\s+/-/g;
-        s/[^a-z-]//g;
     }
     return $s;
 }
