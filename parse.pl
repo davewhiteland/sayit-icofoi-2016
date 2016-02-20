@@ -42,7 +42,8 @@ sub make_akomantoso_for_sayit {
         if ($chunk =~ /((?:[A-Z]+\s)+[A-Zc]+):/) {
             # it's a speaker
             my $this_speaker = $1;
-            if ($this_speaker =~ s/(.*[A-Z]+)\s+(THE CHAIRMAN)\s*$/$2/) {
+            # note: MR SATCHWELL is a special case: see line 247 of icofoi-25
+            if ($this_speaker =~ s/(.*[A-Z]+)\s+(THE CHAIRMAN|MR SATCHWELL)\s*$/$2/) {
                 push @speeches, {
                     'narrative' => 1,
                     'paragraph' => "Introducing $1",
