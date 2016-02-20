@@ -21,8 +21,8 @@ sub make_akomantoso_for_sayit {
     my %data = @_;
     my $filename = $data{'filename'};
     my $text;
-    binmode STDOUT, ":utf8";
-    open INFILE, '<:encoding(utf8)', $filename
+#    open INFILE, '<:encoding(utf8)', $filename
+    open INFILE, $filename
         or die("failed to open $filename to read: $!\n");
     while (<INFILE>) {
         $text .= $_;
