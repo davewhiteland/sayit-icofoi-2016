@@ -2,7 +2,7 @@ Tool to prepare ICoFoI  transcripts for SayIt
 =============
 
 Ended up here:
-http://icofoi2015.sayit.mysociety.org/
+http://icofoi2016.sayit.mysociety.org/
 
 Actual process was:
 
