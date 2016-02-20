@@ -58,6 +58,13 @@ sub make_akomantoso_for_sayit {
             $speakers{$current_speaker_id} = $cn
                 if length $cn > length $speakers{$current_speaker_id};
         } elsif ($current_speaker_id) {
+            # special case: transcript 25-jan has missing data at start
+            if ($chunk=~s/(\(Missing audio feed, untranscribed\)\s+\(.*?\))\s*//) {
+                push @speeches, {
+                    'narrative' => 1,
+                    'paragraph' => $1,
+                };
+            }
             push @speeches, {
                 'speaker-id' => $current_speaker_id,
                 'paragraph' => enrich_punctuation($chunk),
