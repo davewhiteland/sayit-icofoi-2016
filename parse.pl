@@ -165,6 +165,9 @@ sub slugify {
     my $s = lc shift;
     # take out the middle name of mr-xxx-yyy (also dame, prof, ms, etc)
     # to normalise because sometimes both sneak through
+    # (Ideally would keep all titles, honorifics, and middle names...
+    # but the source documents are sometimes lacking forenames so
+    # for the current names, this works enough to be unambiguous)
     for ($s) {
         s/Independent Commission on Freedom of Information/icofoi/gi;
         s/\s+/ /g;
