@@ -171,7 +171,8 @@ sub slugify {
         s/_/-/g;
         s/--+/-/g;
         s/[^ A-Za-z-]//g; # letters spaces and hyphen only
-        s/^(prof\w*|dame|mr|miss|mrs|ms|prof|rt-hon) \w+( \w.*)/$1$2/;
+        s/^rt hon (\w+)/$1/;
+        s/^(prof\w*|dame|mr|miss|mrs|ms|prof) \w+( \w.*)/$1$2/;
         s/\s+/-/g;
         s/[^a-z-]//g;
     }
