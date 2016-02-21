@@ -5,15 +5,15 @@ use strict;
 make_akomantoso_for_sayit(
     filename  => 'icofoi-20-jan-16.txt',
     preface_end_string => 'Christopher Graham \(1.00 pm\)',
-    doc_title => "Independent Commission on Freedom of Information: oral evidence, 20 Jan 2016",
-    title =>  "Independent Commission on Freedom of Information: oral evidence, 20 Jan 2016"
+    doc_title => "Independent Commission on Freedom of Information: oral evidence",
+    title =>  "Session on 20 Jan 2016"
 );
 
 make_akomantoso_for_sayit(
     filename  => 'icofoi-25-jan-16.txt',
     preface_end_string => 'Monday, 25 January 2016',
-    doc_title => "Independent Commission on Freedom of Information: oral evidence, 25 Jan 2016",
-    title =>  "Independent Commission on Freedom of Information: oral evidence, 25 Jan 2016"
+    doc_title => "Independent Commission on Freedom of Information: oral evidence",
+    title =>  "Session on 25 Jan 2016"
 );
 
 
