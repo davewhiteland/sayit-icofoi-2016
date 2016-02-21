@@ -158,6 +158,7 @@ sub enrich_punctuation {
 sub capitalised_name {
     my $n = shift;
     $n =~ s/\b(\w)(\w+)/\U$1\L$2/g;
+    $n =~ s/\bODONNELL/O’Donnell/i;
     return $n;
 }
 
