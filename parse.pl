@@ -174,8 +174,8 @@ sub slugify {
         s/_/-/g;
         s/--+/-/g;
         s/independent-commission-on-freedom-of-information/icofoi/i;
-        s/[^ A-Z0-9a-z-]//g; # alphanums, spaces and hyphen only
-        s/^rt hon (\w+)/$1/;
+        s/[^A-Z0-9a-z-]//g; # alphanums and hyphen only
+        s/^rt-hon-(\w+)/$1/;
         s/^(prof\w*|dame|mr|miss|mrs|ms|prof) \w+( \w.*)/$1$2/;
     }
     return $s;
