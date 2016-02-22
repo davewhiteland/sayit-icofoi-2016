@@ -2,7 +2,7 @@ Tool to prepare ICoFoI  transcripts for SayIt
 =============
 
 Ended up here:
-http://icofoi2016.sayit.mysociety.org/
+http://foi-oral-evidence-2016.sayit.mysociety.org
 
 Actual process was:
 
@@ -10,6 +10,7 @@ Actual process was:
 * create Akoma Ntoso XML versions of transcripts (this script)
 * upload them using "Import Speeches"
 * hand-edit the sections and speakers in SayIt (e.g., adding headshot URLs) 
+* a couple of minor edits in SayIt (fixing introduction of McNALLY)
  
 ---
 
