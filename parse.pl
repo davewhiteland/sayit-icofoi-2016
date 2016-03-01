@@ -148,7 +148,7 @@ sub enrich_punctuation {
         s/(?<!-)--(?!-)/—/g;
         s/(?<=\w)'/’/g;
         s/(?<!\w)'/‘/g;
-        s/(?<=\w)"/”/g;
+        s/(?<=\S)"/”/g;
         s/(?<!\w)"/“/g;
         s/\s+-\s+/ — /g; # nitpick hyphens into emdashes
     }
